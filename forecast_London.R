@@ -52,8 +52,8 @@ summary(forecast_london_ats)
   # Advanced plot 
   autoplot(forecast_london_ats,ylim = c(0,480000),
          main="London",ylab="ED attendances") +
-    autolayer(london_ats_actual, series="Forecast") + 
-    autolayer(forecast_london_ats$mean, series="Observed") +
+    autolayer(london_ats_actual, series="Observed") + 
+    autolayer(forecast_london_ats$mean, series="Forecast") +
     theme_bw() 
 
 
